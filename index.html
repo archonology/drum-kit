@@ -72,14 +72,15 @@
             const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
             console.log(audio);
             if (!audio) return; // stops the function from running when keys are hit that aren't assigned value
-            audio.currentTime = 0 //allows for the button sounds to happen repeatedly on multiple clicks (rewind to start)
+            audio.currentTime = 0; //allows for the button sounds to happen repeatedly on multiple clicks (rewind to start)
             audio.play(); //plays the audio on click
             console.log(key);
             key.classList.add('playing')
         });
 
         function removeTransition(e) {
-            console.log(e);
+            if (e.propertyName !== 'transform') return; // skip if it isn't a transform
+            console.log(e.propertyName)
         }
 
         const keys = document.querySelectorAll('.key');
