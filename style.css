@@ -1,0 +1,11 @@
+body {
+    background-image: url(./pexels-dayvison-de-oliveira-silva-5723240.jpg);
+    background-size: auto;
+}
+
+.keys {
+    color: antiquewhite;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.396);
+    padding: 1em;
+}
