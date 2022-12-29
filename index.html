@@ -64,13 +64,15 @@
 
 
     <script>
-window.addEventListener("keydown", function (e) {
-console.log(e.keyCode);
-//create a variable and define it with the keyCode variables on the e click event
-const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-console.log(audio);
-if(!audio) return; // stops the function from running when keys are hit that aren't assigned value
-});
+        window.addEventListener("keydown", function (e) {
+            console.log(e.keyCode);
+            //create a variable and define it with the keyCode variables on the e click event
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+            console.log(audio);
+            if (!audio) return; // stops the function from running when keys are hit that aren't assigned value
+            audio.currentTime = 0 //allows for the button sounds to happen repeatedly on multiple clicks
+            audio.play(); //plays the audio on click
+        });
     </script>
 
 </body>
