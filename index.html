@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Drum Kit</title>
 </head>
+
 <body>
-    
+    <div class="keys">
+        <!-- data-key (not a standard, though -- the data- is the structure you need to create custom attributes) is the numeric value of the key once pressed -- see keycode.info in your browser to get the key press data-->
+        <div data-key="65" class="key">
+            <!-- kdb is the user keyboard input -->
+            <kdb>A</kdb>
+            <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key">
+            <kdb>S</kdb>
+            <span class="sound"></span>
+        </div>
+        <div data-key="68" class="key">
+            <kdb>D</kdb>
+            <span class="sound"></span>
+        </div>
+        <div data-key="70" class="key">
+            <kdb>F</kdb>
+            <span class="sound"></span>
+        </div>
+        <div data-key="71" class="key">
+            <kdb>G</kdb>
+            <span class="sound"></span>
+        </div>
+        <div data-key="72" class="key">
+            <kdb>H</kdb>
+            <span class="sound"></span>
+        </div>
+        <div data-key="74" class="key">
+            <kdb>J</kdb>
+            <span class="sound"></span>
+        </div>
+        <div data-key="75" class="key">
+            <kdb>K</kdb>
+            <span class="sound"></span>
+        </div>
+        <div data-key="76" class="key">
+            <kdb>L</kdb>
+            <span class="sound"></span>
+        </div>
+    </div>
 </body>
+
 </html>
