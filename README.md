@@ -1,7 +1,7 @@
 # JS Drum Kit
 
 # Description
-For the new year I'm sharpening up my JS skills with javascript30.com.  It's an awesome, free program that helps you kick up your vanilla JS skills notch.
+For the new year I'm sharpening up my JS skills with [javascript30.com](https://javascript30.com/).  It's an awesome, free program that helps you kick up your vanilla JS skills notch.
 This first project was a tutorial on how to create your own drum kit with pure JS.  check out the deployed page to do some drumming!
 
 # Screenshot
